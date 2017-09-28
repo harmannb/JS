@@ -52,3 +52,18 @@
 			instrcutor; // "Elie"
 			anotherInstructor; "Matt"
 			```
+* Array Iteration 
+	* while vs do...while
+		* The main difference between while loop and do...while loop is that the code inside of a do...while loop is guaranteed to execute at least once. 
+	* Using split to turn a string into an array 
+		* If you pass a delimiter into the split method, the delimiting values will be removed from the array
+
+			```
+			var dashedString = "lots-of-dashes-here";
+			var removedDashes = dashedString.split("-")
+			removedDashes; // ["lots", "of", "dashes", "here"]
+			var removedDashes = dashedString.split("-").join(" ")
+			removedDashes; // ["lots of dashes here"]
+			```
+	* Mutability
+		* Strings are immutable, as you cannot change the characters within them in the same way that you do with arrays. 
