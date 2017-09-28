@@ -38,5 +38,17 @@
 		* lastIndexOf works just like indexOf, but searching from the end of the array rather than the beginning
 	* **Reference vs Value**
 		* Javascript is *always* pass by value, but when a variable refers to an object(including arrays), the "value" is a reference to the object
-		* Changing the value of a variable never chnages the underlying primitive or obejct, it just points the variable to a new primitive or object 
-		* However, changing a *property* of an object referenced by a variable does chnage the underlying object 
+		* Changing the value of a variable never changes the underlying primitive or obejct, it just points the variable to a new primitive or object 
+		* However, changing a *property* of an object referenced by a variable does change the underlying object 
+
+			```
+			var instructor = "Elie";
+			var anotherInstructor = instructor; 
+			anotherInstructor // "Elie"
+			
+			// Let's assign a new value to anotherInstructor: 
+			anotherInstructor = "Matt"; 
+			
+			instrcutor; // "Elie"
+			anotherInstructor; "Matt"
+			```
