@@ -67,3 +67,8 @@
 			```
 	* Mutability
 		* Strings are immutable, as you cannot change the characters within them in the same way that you do with arrays. 
+		* In fact, any operation which changes characters in a string actually produces a new string, rather than mutating the original string. 
+* Objects
+	* Bracket vs Dot Notation 
+		* Use the bracket notation when you need to evaluate some expression or pass in a variable to get the name of the key and it is not a variable or expression, always use the dot notation. 
+		* Every key in a JavaScript object is a string.
