@@ -72,3 +72,7 @@
 	* Bracket vs Dot Notation 
 		* Use the bracket notation when you need to evaluate some expression or pass in a variable to get the name of the key and it is not a variable or expression, always use the dot notation. 
 		* Every key in a JavaScript object is a string.
+* Function 
+	* Function Scope - The context in which values and expressions are 'visible' or can be referenced. There are only 2 kinds of scope: *global scope* and *function scope*. 
+		* All variables that are defined outside of functions (and inside of functions without the var keyword) are declared in the global scope. 
+		* All variables defined inside of functions can only be  accessed by those functions (and any inner functions)
