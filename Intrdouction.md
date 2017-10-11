@@ -76,3 +76,20 @@
 	* Function Scope - The context in which values and expressions are 'visible' or can be referenced. There are only 2 kinds of scope: *global scope* and *function scope*. 
 		* All variables that are defined outside of functions (and inside of functions without the var keyword) are declared in the global scope. 
 		* All variables defined inside of functions can only be  accessed by those functions (and any inner functions)
+		* Global scope is your best friend and your worst nightmare, learning to control your scopes is easy and in doing so, you'll run into no issues with global scope problems (usually namespace clashes)
+	* Closures
+		* Whenever you see a function within another function, the inner function has access to the scope in the outer function, this is called Lexical Scope or Closure. 
+	
+		```
+			// Scope A
+			var myFunction = function () {
+			// Scope B 
+			var name = 'Todd' //defined in Scope B
+			var myOtherFunction = function () {
+			// Scope C: 'name' is accessible here!
+				}
+			}	
+
+		```
+		
+	
