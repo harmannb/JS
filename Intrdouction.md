@@ -110,4 +110,58 @@
 			var helloTodd = sayHello('Todd'); 
 			helloTodd(): // will call closure and log 'Hello, Todd'
 		```
+	* Function declaration vs. Function expression 
+		* One difference is that when we use a function expression, we do not assign a "name" to the function. A function without a name is called an **anonymous function.**
+	* IIFE: Immediately Invoked Function Expressions
+		* An immediately invoked function expression (IIFE) is a function which immediately gets called after it is written. To create an IIFE, simply wrap your anonymous function in parentheses. 
+		* One common use case of IIFE is to return an object.
+	
+		```
+			var personObject = (function() {
+				return {
+					name: "Tim",
+					age: 32, 
+					occupation: "developer", 
+					hobbies: "sailing"
+				};
+			})();
+		```
+		 After the code is executed, the personObject is equal to the object that was returned from the anonymous function. We can now ise the object: 
+		 
+	 	```
+	 	personObject.name; // returns "Tim"
+		personObject.age; // returns 32
+		personObject.occupation; // returns "developer"
+		personObject.hobbies; // returns "sailing"
+		
+		```
+			
+		This time the object will have functions for the values of the keys: 
+		
+		```
+		var personObject = (function invokeRightAway(){ 
+			var person = "Elie"; 
+			return {
+				getName: function(){
+					return person;
+				}, 
+				setName: function(newName){
+					person = newName;
+				}
+			};
+		})();
+		
+		personObject.getName(); // "Elie"
+		personObject.setName("Mary"); //
+		personObject.getName(); // "Mary"
+		person; // ReferenceError: person is not defined
+		```
+		
+		
+		
+
+		
+		
+		
+		
 		
