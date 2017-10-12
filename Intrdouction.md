@@ -93,3 +93,21 @@
 		```
 		
 	
+		* Closures can return a function reference. Inside our scope, we can return things so that they're available in the parent scope: 
+			
+			```
+		var sayHello = function (name) {
+				var text = 'Hello, ' + name; 
+				return function () {
+					console.log(text)
+				};
+		};
+		```
+		
+			The closure concept we've used here makes our scope inside sayHello inaccessible to the public scope. 
+			
+			```
+			var helloTodd = sayHello('Todd'); 
+			helloTodd(): // will call closure and log 'Hello, Todd'
+		```
+		
