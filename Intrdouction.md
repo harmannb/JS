@@ -161,7 +161,10 @@
 	* Hoisting 
 		* Because variable declarations (and declarations in general) are processed before any code is executed, declaring a variable anywhere in the code is equivalent to dclaring it at the top. This also means that a variable can appear to be used before it's declared. This behavior is called "hoisting", as it appears that the variable declaration is moved to the top of the function or global code. 
 		* Hoisting and Inside of Functions 
-		* If you have a variable delclared anywhere within a function scope it's going to brough to the very top. But just the declaration not the initalization. 
+			* If you have a variable delclared anywhere within a function scope it's going to brough to the very top. But just the declaration not the initalization. Initialization is when a value it applied and declarartion is when the variable is declared. It's best practice to declare all the variables at the top because it's happening behind the scenes anyways. 
+		* Hoisting in Function Declarations vs Function Expressions 
+			* Function declarations are fully defined before the code is run. Since a function expression assignes an anonymous function to a variable, hoisting applies to that variable name as well. 
+			* Javascripy always starts from the in (the closet function) and works its way out (to other functions and eventually the global scope)
 		
 
 		
