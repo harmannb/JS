@@ -157,7 +157,11 @@
 		person; // ReferenceError: person is not defined
 		```
 		
-		
+
+	* Hoisting 
+		* Because variable declarations (and declarations in general) are processed before any code is executed, declaring a variable anywhere in the code is equivalent to dclaring it at the top. This also means that a variable can appear to be used before it's declared. This behavior is called "hoisting", as it appears that the variable declaration is moved to the top of the function or global code. 
+		* Hoisting and Inside of Functions 
+		* If you have a variable delclared anywhere within a function scope it's going to brough to the very top. But just the declaration not the initalization. 
 		
 
 		
