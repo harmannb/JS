@@ -1,2 +1,0 @@
-## Intermediate Javascript Part I 
-
