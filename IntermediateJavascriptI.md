@@ -145,3 +145,8 @@
 * Timers 
 	* setTimeout + setInterval 
 		* It's quite common to write code that we want to be executed after a specfic amount of time. To do this, we use setTimeout and setInterval functions. Both functions accept a callback function and a time in milliseconds as parameters. 
+		* The main difference is that the setTimeout function will only run the callback function to be executed once, whereas setInterval will run it an infinite amount of times(until the timer is cleared). 
+		* If you want to stop the timer, setTimeout and setInterval return a special value called a timer id. If we pass this value into the clearTimeout or clearInterval method, we can stop our timer. 
+
+* Asynchronous Code
+	*  
