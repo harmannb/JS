@@ -141,3 +141,7 @@
 		math function.
 		*/
 	```
+	
+* Timers 
+	* setTimeout + setInterval 
+		* It's quite common to write code that we want to be executed after a specfic amount of time. To do this, we use setTimeout and setInterval functions. Both functions accept a callback function and a time in milliseconds as parameters. 
