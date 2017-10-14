@@ -93,23 +93,51 @@
 		}
 
 	```
-* Anonymous Functions As Parameters
+	* Anonymous Functions As Parameters
 
-	```
-	sendMessage("Hello World", function(message){
-   		// message refers to the string "Hello World"
-   		console.log(message + " from a callback function!");
-	});  // Hello World from a callback function!
-
-	```
-	Is equivalent to: 
+		```
+		sendMessage("Hello World", function(message){
+	   		// message refers to the string "Hello World"
+	   		console.log(message + " from a callback function!");
+		});  // Hello World from a callback function!
 	
-	```
-	var myFunction = function(message){
-	    // message refers to the string "Hello World"
-	    console.log(message + " from a callback function!");
-	};
+		```
+		Is equivalent to: 
+		
+		```
+		var myFunction = function(message){
+		    // message refers to the string "Hello World"
+		    console.log(message + " from a callback function!");
+		};
+		
+		sendMessage("Hello World", myFunction);
 	
-	sendMessage("Hello World", myFunction);
-
+		```
+	* Instead of writing many different functions, we can just write one and pass another function to it! We call a function that is passed as an argument to a higher order function a **callback**. 
+		
+* Callback Functions
+	* A callback function is the function that is being passed to a higher order function and the callback function will be invoked within the higher order function. 
+	
+		```
+		function add(a,b){
+		    return a+b;
+		}
+		
+		function subtract(a,b){
+		    return a-b;
+		}
+		
+		function math(a,b,callback){
+		    return callback(a,b);
+		}
+		
+		math(1,4,add); // returns 5
+		math(5,5,subtract); // returns 0
+		
+		/* 
+		as we start making additional functions that perform operations on
+		two numbers we can pass them to the math function. So if we make a
+		divide or multiply function we can call all of them just using the
+		math function.
+		*/
 	```
