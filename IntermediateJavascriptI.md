@@ -80,5 +80,36 @@
 	// 3
 	// 4
 	```
+* Higher Order Functions 
+	* Functions that accept functions as parameters are called "higher order functions". 
+	* It is important to remember the difference between referencing a function here, and invoking a function. When you pass a function into a higher order, you must always pass in the function name, nit an invocation of the function. 
+	
+	```
+	// sendMessage is a higher order function as it accepts a parameter called 	fn.
+	// How do we know fn is a function? We can see the fn parameter is being
+	// invoked with ()
+		function sendMessage(message, fn){
+		    return fn(message);
+		}
 
+	```
+* Anonymous Functions As Parameters
 
+	```
+	sendMessage("Hello World", function(message){
+   		// message refers to the string "Hello World"
+   		console.log(message + " from a callback function!");
+	});  // Hello World from a callback function!
+
+	```
+	Is equivalent to: 
+	
+	```
+	var myFunction = function(message){
+	    // message refers to the string "Hello World"
+	    console.log(message + " from a callback function!");
+	};
+	
+	sendMessage("Hello World", myFunction);
+
+	```
