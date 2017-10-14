@@ -61,7 +61,24 @@
 	// "Yukihiro Matsumoto" for creatorOfLanguage
 	addProgrammingLanguage("ruby", 1995, "Yukihiro Matsumoto");
 ```
-
-
+* Nested Arrays
+	* Multidimensional Arrays
+	
+	```
+	var nestedArr = [[1,2], [3,4]];
+	for(var i=0; i<nestedArr.length; i++){
+	    for(var j=0; j<nestedArr[i].length; j++){
+	        // notice that we are going inside the outer array
+	        // and now inside of the inner array
+	        console.log(nestedArr[i][j]);
+	    }
+	}
+	
+	// this will log out...
+	// 1
+	// 2
+	// 3
+	// 4
+	```
 
 
