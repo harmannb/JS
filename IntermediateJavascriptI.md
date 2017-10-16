@@ -63,10 +63,8 @@
 ```
 * Nested Arrays
 	* Multidimensional Arrays
-	
-	
-	```
-	var nestedArr = [[1,2], [3,4]];
+
+	```var nestedArr = [[1,2], [3,4]];
 	for(var i=0; i<nestedArr.length; i++){
 	    for(var j=0; j<nestedArr[i].length; j++){
 	        // notice that we are going inside the outer array
@@ -80,42 +78,40 @@
 	// 2
 	// 3
 	// 4
-```	
+	```	
 * Higher Order Functions 
 	* Functions that accept functions as parameters are called "higher order functions". 
 	* It is important to remember the difference between referencing a function here, and invoking a function. When you pass a function into a higher order, you must always pass in the function name, nit an invocation of the function. 
 	
-	
 	```
-	// sendMessage is a higher order function as it accepts a parameter called 	fn.
-	// How do we know fn is a function? We can see the fn parameter is being
-	// invoked with ()
-		function sendMessage(message, fn){
-		    return fn(message);
-		}
+	// sendMessage is a higher order function as it accepts a 				parameter called 	fn.
+		// How do we know fn is a function? We can see the fn 				parameter is being
+		// invoked with ()
+			function sendMessage(message, fn){
+			    return fn(message);
+			}
+	```
+* Anonymous Functions As Parameters
 
 	```
-	* Anonymous Functions As Parameters
-
-		```
-		sendMessage("Hello World", function(message){
-	   		// message refers to the string "Hello World"
-	   		console.log(message + " from a callback function!");
-		});  // Hello World from a callback function!
-	
-		```
-		Is equivalent to: 
-		
-		```
-		var myFunction = function(message){
-		    // message refers to the string "Hello World"
-		    console.log(message + " from a callback function!");
-		};
-		
-		sendMessage("Hello World", myFunction);
-	
+	sendMessage("Hello World", function(message){
+   		// message refers to the string "Hello World"
+   		console.log(message + " from a callback function!");
+	});  // Hello World from a callback function!
 	```
 		
+	Is equivalent to: 
+		
+	
+	```
+	var myFunction = function(message){
+	    // message refers to the string "Hello World"
+	    console.log(message + " from a callback function!");
+	};
+	
+	sendMessage("Hello World", myFunction);
+	```
+	
 	* Instead of writing many different functions, we can just write one and pass another function to it! We call a function that is passed as an argument to a higher order function a **callback**. 
 		
 * Callback Functions
@@ -144,8 +140,8 @@
 		divide or multiply function we can call all of them just using the
 		math function.
 		*/
-```
-	
+		```	
+
 * Timers 
 	* setTimeout + setInterval 
 		* It's quite common to write code that we want to be executed after a specfic amount of time. To do this, we use setTimeout and setInterval functions. Both functions accept a callback function and a time in milliseconds as parameters. 
@@ -160,3 +156,5 @@
 	* call stack - where function calls are put (each one is called a "stack frame"). The call stack (sometimes simply referred to as the stack) is LIFO (last-in-first-out) data structure. Like a stack of cups (last one you put on the stack is the first one that comes off). What that means is that is there is a function on the stack and it's under another function, it can never execute until the function at the top has come off the stack (either by returning some value or by executing all the code in the function). 
 	* event queue -  when an asynchronous event occurs, it gets put into what is called the "event queue". It is then moved to the stack  when the stack is clear (i.e. when there is no functions in the stack). The queue can also be described as a "list of messages to be processed". A function is associated with each message. 
 	* heap - where objects are stored. The heap is an unstructed/unorganzied region of the memory. 
+
+* Closures 
