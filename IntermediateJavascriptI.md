@@ -80,8 +80,7 @@
 	// 2
 	// 3
 	// 4
-```
-	
+```	
 * Higher Order Functions 
 	* Functions that accept functions as parameters are called "higher order functions". 
 	* It is important to remember the difference between referencing a function here, and invoking a function. When you pass a function into a higher order, you must always pass in the function name, nit an invocation of the function. 
@@ -145,7 +144,7 @@
 		divide or multiply function we can call all of them just using the
 		math function.
 		*/
-	```
+```
 	
 * Timers 
 	* setTimeout + setInterval 
