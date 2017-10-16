@@ -61,7 +61,9 @@
 	// "Yukihiro Matsumoto" for creatorOfLanguage
 	addProgrammingLanguage("ruby", 1995, "Yukihiro Matsumoto");
 ```
+
 * Nested Arrays
+
 	* Multidimensional Arrays
 	
 	```
@@ -80,7 +82,10 @@
 	// 3
 	// 4
 	```
+	
 * Higher Order Functions 
+
+
 	* Functions that accept functions as parameters are called "higher order functions". 
 	* It is important to remember the difference between referencing a function here, and invoking a function. When you pass a function into a higher order, you must always pass in the function name, nit an invocation of the function. 
 	
@@ -113,9 +118,13 @@
 		sendMessage("Hello World", myFunction);
 	
 		```
+		
 	* Instead of writing many different functions, we can just write one and pass another function to it! We call a function that is passed as an argument to a higher order function a **callback**. 
 		
+		
 * Callback Functions
+
+
 	* A callback function is the function that is being passed to a higher order function and the callback function will be invoked within the higher order function. 
 	
 		```
@@ -143,15 +152,20 @@
 	```
 	
 * Timers 
+
+
 	* setTimeout + setInterval 
 		* It's quite common to write code that we want to be executed after a specfic amount of time. To do this, we use setTimeout and setInterval functions. Both functions accept a callback function and a time in milliseconds as parameters. 
 		* The main difference is that the setTimeout function will only run the callback function to be executed once, whereas setInterval will run it an infinite amount of times(until the timer is cleared). 
 		* If you want to stop the timer, setTimeout and setInterval return a special value called a timer id. If we pass this value into the clearTimeout or clearInterval method, we can stop our timer. 
 
 * Asynchronous Code
+
+
 	* Another reason why callbacks are such a powerful tool is that they enable us to manage asynchronous code, or code that will be executed at a later point.
 	* JavaScript is **single threaded.** What this means is only one process will happen at a time. Unlike other languages where you can create your own threads, a process called multi-threading. 
 	* We can write asynchronous code, which may give the *impression* that multiple things are happening at once, even though this is not the case. 
 * How JS manages asynchronous code
 	* call stack - where function calls are put (each one is called a "stack frame"). The call stack (sometimes simply referred to as the stack) is LIFO (last-in-first-out) data structure. Like a stack of cups (last one you put on the stack is the first one that comes off). What that means is that is there is a function on the stack and it's under another function, it can never execute until the function at the top has come off the stack (either by returning some value or by executing all the code in the function). 
 	* event queue -  when an asynchronous event occurs, it gets put into what is called the "event queue". It is then moved to the stack  when the stack is clear (i.e. when there is no functions in the stack). The queue can also be described as a "list of messages to be processed". A function is associated with each message. 
+	* heap - where objects are stored. The heap is an unstructed/unorganzied region of the memory. 
