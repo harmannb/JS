@@ -61,7 +61,6 @@
 	// "Yukihiro Matsumoto" for creatorOfLanguage
 	addProgrammingLanguage("ruby", 1995, "Yukihiro Matsumoto");
 ```
-
 * Nested Arrays
 	* Multidimensional Arrays
 	
@@ -81,7 +80,7 @@
 	// 2
 	// 3
 	// 4
-	```
+```
 	
 * Higher Order Functions 
 	* Functions that accept functions as parameters are called "higher order functions". 
@@ -116,7 +115,7 @@
 		
 		sendMessage("Hello World", myFunction);
 	
-		```
+	```
 		
 	* Instead of writing many different functions, we can just write one and pass another function to it! We call a function that is passed as an argument to a higher order function a **callback**. 
 		
