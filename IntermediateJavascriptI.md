@@ -28,7 +28,6 @@
 * Nested Objects
 	* Accessing and Setting values in nested objects 
 	
-	
 	```
 	var programmingLanguages = {
 	    java: {
@@ -60,7 +59,7 @@
 	// with the value of 1995 for the key "yearCreated" and the value
 	// "Yukihiro Matsumoto" for creatorOfLanguage
 	addProgrammingLanguage("ruby", 1995, "Yukihiro Matsumoto");
-```
+    ```
 * Nested Arrays
 	* Multidimensional Arrays
 
@@ -84,9 +83,8 @@
 	* It is important to remember the difference between referencing a function here, and invoking a function. When you pass a function into a higher order, you must always pass in the function name, nit an invocation of the function. 
 	
 	```
-	// sendMessage is a higher order function as it accepts a 				parameter called 	fn.
-		// How do we know fn is a function? We can see the fn 				parameter is being
-		// invoked with ()
+	// sendMessage is a higher order function as it accepts a parameter called fn.
+    // How do we know fn is a function? We can see the fn parameter is being invoked with ()
 			function sendMessage(message, fn){
 			    return fn(message);
 			}
@@ -102,7 +100,6 @@
 		
 	Is equivalent to: 
 		
-	
 	```
 	var myFunction = function(message){
 	    // message refers to the string "Hello World"
@@ -111,12 +108,10 @@
 	
 	sendMessage("Hello World", myFunction);
 	```
-	
 	* Instead of writing many different functions, we can just write one and pass another function to it! We call a function that is passed as an argument to a higher order function a **callback**. 
 		
 * Callback Functions
 	* A callback function is the function that is being passed to a higher order function and the callback function will be invoked within the higher order function. 
-	
 	
 		```
 		function add(a,b){
@@ -141,7 +136,6 @@
 		math function.
 		*/
 		```	
-
 * Timers 
 	* setTimeout + setInterval 
 		* It's quite common to write code that we want to be executed after a specfic amount of time. To do this, we use setTimeout and setInterval functions. Both functions accept a callback function and a time in milliseconds as parameters. 
