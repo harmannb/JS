@@ -152,3 +152,9 @@
 	* heap - where objects are stored. The heap is an unstructed/unorganzied region of the memory. 
 
 * Closures 
+	* Closure is when a function is able to access variables - scope chain from an outer function that already returned. 
+	* The closure has three scope chains: it had access to its own scope (variables defined between its curly brackets), it has access to the outer function's variables, and it has access to the global vaiables. 
+		* Variables created without the keyword var, are always global, even if they are created inside a function. 
+		* Global variables live as long as your application lives. 
+		* Local variables have short lives. They are created when the function is invoked, and deleted when the function is finished.  
+	* A closure us a self-invoking function that has access to the parent scope, even after the parent function has closed. 
