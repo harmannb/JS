@@ -158,3 +158,16 @@
 		* Global variables live as long as your application lives. 
 		* Local variables have short lives. They are created when the function is invoked, and deleted when the function is finished.  
 	* A closure us a self-invoking function that has access to the parent scope, even after the parent function has closed. 
+* DOM 
+	* DOM Manipulation 
+		* querySelector, which selects a **SINGLE** element using CSS selectors. 
+		* Change the text of an element through the innerHTML and innerText properties. 
+		* Manipulate the CSS properties for elements (through inline styling) with the style property. 
+		* Access/modify attributes on elements with getAttribute and setAttribute
+		* Add/remove classes to elements using classList
+* Traversing the DOM 
+	* Trying to find elements inside of other elements, travel through the DOM in search of something is called DOM traversal. 
+		* Create elements we use the .createElement function on the document object and pass in a string with the name of the element that we would like to create. 
+		* After you have created th element, you can append/remove an element using appendChild and removeChild.
+* DOM Events 
+	* DOM Events are sent to notify code of interesting things that have taken place. 
