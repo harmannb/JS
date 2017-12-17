@@ -170,4 +170,33 @@
 		* Create elements we use the .createElement function on the document object and pass in a string with the name of the element that we would like to create. 
 		* After you have created th element, you can append/remove an element using appendChild and removeChild.
 * DOM Events 
-	* DOM Events are sent to notify code of interesting things that have taken place. 
+	* DOM Events are sent to notify code of interesting things that have taken place. Events can repersent everything from a basic user interactions to automated notifications of things happening in the rendering model. 
+	* Data in the event object 
+		 * When an event is triggered, what have access to a special object called the event object. Such as event.target - the target element of the event. 
+		 * event.target example: 
+		
+			```
+			var listItems = document.querySelectorAll('li');
+			
+			for(var i=0; i<listItems.length; i++){
+			    listItems[i].addEventListener("click", function(event){
+			        alert("You just clicked on " + event.target.innerText);
+			    });
+			}
+* Web Storage 
+	* sessionStorage 
+		* maintains a seperate storage area for each given origin that's available for the duration of the page session (as long as the browser is open, including page reloads and restores)
+	* localStorage 
+		* does the same thing, but persists even when the broswer is closed and reopened. 
+	* Adding, retrieving and removing from localStorage
+		* The most important thing to remember is all your *keys* in localStorage and sessionStorage must be **STRINGS**. 
+		* To set soemthing into localStorage we use the setItem method to retrieve we use the getItem method (only passing the key)
+      
+      ```
+      	localStorage.setItem("instructor", "Elie")
+localStorage.setItem("favoriteNumber", 18)
+		localStorage.getItem("instructor"); // "Elie"
+```
+		* To delete a key we use the removeItem function         
+  
+	
