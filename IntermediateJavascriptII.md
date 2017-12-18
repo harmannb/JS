@@ -66,5 +66,46 @@
 			```
 	* Transvering the DOM with jQuery - **find/parent/childern/prev/next**
 		* For DOM tranversal we can iuse find, which accepts a CSS selector to find elements inside a selected element. To access the childern of a selected element we can use childern and to access a child's parent element we can use parent. To find the next elemnt in a list of siblings we can use next and to find the previous sibling we can use prev. 
-		* 		
-	
+		
+		
+			```
+			$(document).ready(function(){
+				var $childDivsInsideArticle = $("article").find("div").childern();
+			})
+			```
+	* filtering with jQuery
+		* jQuery has quite a few helpful methods to select elements based on certain filters. These methods include is, has, not, eq, and many more. 
+		* The eq method is particularly important when accessing elements inside of a jQuery object. We can use it in place of bracket notation to access elements inside of a jQuery object. 
+		
+			```		
+			var $firstLi = $("li").eq(0);
+			var $secondLi = $("li").eq(1);
+			$firstLi.text(); // "Item 1"
+			$secondLi.text(); // "Item 2"				
+			```
+	* Adding and removing elements from the DOM - **after/before/append/prepend**
+		* To add elements to the DOM after a selected element or before a selected element. We can also append them to a selected element (nested at the end an element) or prepend them to a selected element (nested at the beginning). 
+		
+			```
+			$(document).ready(function(){
+			    var $newParagraph = $("<p>");
+			    $newParagraph.text("Another article");
+			    $newParagraph.css("color","red");
+			
+			    var $anotherParagraph = $("<p>", {
+			        text:"Another approach",
+			        css: {
+			            color: "purple",
+			            // we have to use quotes because of the '-'
+			            "font-size": "2em"
+			        }
+			    });
+			    $("article").append($newParagraph);
+			    $("article").prepend($anotherParagraph);
+			});
+			
+			```
+			
+			
+
+			
