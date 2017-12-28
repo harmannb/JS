@@ -106,6 +106,19 @@
 			
 			```
 			
+	* Adding and removing events with jQuery   
+		* Just like addEventListener, the first parameter to on or off is the name of the event followed by a callback function. The second parameter is the callback, which specified what we want to do when the event is fired. Also similar to addEventListener, the callback has access to an event object as its first parameter. 
+		
+			```	
+			$(document).ready(function(){
+		   		$("article").on("click", function(e){
+		        	console.log($(e.target).val()); // This works great.
+		        	console.log(e.target.val()); // TypeError! e.target isn't a jQuery object, so doesn't have a .val method.
+		    	});
+			});
 			
-
+			```
 			
+* Intermiediate jQuery
+	* jQuery A
+	
