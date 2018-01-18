@@ -1,0 +1,2 @@
+# Introduction to XHR and AJAX
+* XHR - this stands for **X**ML**H**ttp**R**equest, which is an API that allows for transferring data between client and server. This API is only available to scripting languages in the browser(JavaScript), so it can be used by server languages like Ruby, Python, Java etc. You use XHR object 
