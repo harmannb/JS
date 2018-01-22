@@ -23,13 +23,13 @@
 	    // this will add an HTTP request header of  'Accept': 'application/json'
 	    dataType: "json"
 	    // you can think of this ".then" like this: after we get the response, then what do we do? 
-		}).then(function(response){
+	}).then(function(response){
 	    // let's see what the response is from the OMDB API!
 	    console.log(response);
-		}).catch(function(error){
+	}).catch(function(error){
 	    // something went wrong :(
 	    console.log(error);
-		}) 
+	}) 
 ```
 
 * **$.get**	
