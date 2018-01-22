@@ -190,10 +190,10 @@
 		* does the same thing, but persists even when the broswer is closed and reopened. 
 	* Adding, retrieving and removing from localStorage
 		* The most important thing to remember is all your *keys* in localStorage and sessionStorage must be **STRINGS**. 
-		* To set soemthing into localStorage we use the setItem method to retrieve we use the getItem method (only passing the key)
+		* To set something into localStorage we use the setItem method to retrieve we use the getItem method (only passing the key)
       
       ```
-      localStorage.setItem("instructor", "Elie")
+       localStorage.setItem("instructor", "Elie")
 		localStorage.setItem("favoriteNumber", 18)
 		localStorage.getItem("instructor"); // "Elie"
 		

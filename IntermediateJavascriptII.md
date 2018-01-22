@@ -54,7 +54,6 @@
 	* **css/data/attr**
 		* To access the styles of an element we can use the css function. To access the attributes of an element we can use the attr function. To access the data-attributes of an element we can use the data function. As with text, html, and val, these methods can be used as getters or setters. Pass in a single argument to use them as getters, pass in two to use them as setters. 
 		
-			```
 			$(document).ready(function(){
 			    $("article").css("background-color", "red");
 			    $("article").css("background-color"); // "red"
