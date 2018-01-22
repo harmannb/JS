@@ -193,7 +193,7 @@
 		* To set soemthing into localStorage we use the setItem method to retrieve we use the getItem method (only passing the key)
       
       ```
-      	localStorage.setItem("instructor", "Elie")
+      localStorage.setItem("instructor", "Elie")
 		localStorage.setItem("favoriteNumber", 18)
 		localStorage.getItem("instructor"); // "Elie"
 		

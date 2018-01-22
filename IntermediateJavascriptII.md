@@ -42,7 +42,7 @@
 				$("li").text("hi!"); // innerText
 	    		$("input").val("new value"); // value = new value
 			});
-		```
+
 	*  **addClass/removeClass/toggleClass**
 		
 		```
@@ -51,7 +51,6 @@
 		    $("article").removeClass("hidden"); // remove a class
 		    $("article").toggleClass("hidden"); // toggle the class (if on -> off, if off -> on)
 	});
-	```
 	
 	* **css/data/attr**
 		* To access the styles of an element we can use the css function. To access the attributes of an element we can use the attr function. To access the data-attributes of an element we can use the data function. As with text, html, and val, these methods can be used as getters or setters. Pass in a single argument to use them as getters, pass in two to use them as setters. 
@@ -63,7 +62,7 @@
 			    $("article").attr("style", "display:flex;");
 			    $("article").data("id", "1");
 			});
-			```
+			
 	* Transvering the DOM with jQuery - **find/parent/childern/prev/next**
 		* For DOM tranversal we can iuse find, which accepts a CSS selector to find elements inside a selected element. To access the childern of a selected element we can use childern and to access a child's parent element we can use parent. To find the next elemnt in a list of siblings we can use next and to find the previous sibling we can use prev. 
 		
@@ -72,7 +71,7 @@
 			$(document).ready(function(){
 				var $childDivsInsideArticle = $("article").find("div").childern();
 			})
-			```
+			
 	* filtering with jQuery
 		* jQuery has quite a few helpful methods to select elements based on certain filters. These methods include is, has, not, eq, and many more. 
 		* The eq method is particularly important when accessing elements inside of a jQuery object. We can use it in place of bracket notation to access elements inside of a jQuery object. 
@@ -81,8 +80,8 @@
 			var $firstLi = $("li").eq(0);
 			var $secondLi = $("li").eq(1);
 			$firstLi.text(); // "Item 1"
-			$secondLi.text(); // "Item 2"				
-			```
+			$secondLi.text(); // "Item 2"	
+			
 	* Adding and removing elements from the DOM - **after/before/append/prepend**
 		* To add elements to the DOM after a selected element or before a selected element. We can also append them to a selected element (nested at the end an element) or prepend them to a selected element (nested at the beginning). 
 		
@@ -104,8 +103,6 @@
 			    $("article").prepend($anotherParagraph);
 			});
 			
-			```
-			
 	* Adding and removing events with jQuery   
 		* Just like addEventListener, the first parameter to on or off is the name of the event followed by a callback function. The second parameter is the callback, which specified what we want to do when the event is fired. Also similar to addEventListener, the callback has access to an event object as its first parameter. 
 		
@@ -117,8 +114,4 @@
 		    	});
 			});
 			
-			```
 			
-* Intermiediate jQuery
-	* jQuery A
-	
