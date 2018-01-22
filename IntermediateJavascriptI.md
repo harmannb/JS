@@ -194,9 +194,11 @@
       
       ```
       	localStorage.setItem("instructor", "Elie")
-localStorage.setItem("favoriteNumber", 18)
+		localStorage.setItem("favoriteNumber", 18)
 		localStorage.getItem("instructor"); // "Elie"
-```
+		
+		```
+
 		* To delete a key we use the removeItem function         
   
 	
