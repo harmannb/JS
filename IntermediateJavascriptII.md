@@ -45,12 +45,11 @@
 
 	*  **addClass/removeClass/toggleClass**
 		
-		```
-		$(document).ready(function(){
-		    $("article").addClass("hidden"); // add a class
-		    $("article").removeClass("hidden"); // remove a class
-		    $("article").toggleClass("hidden"); // toggle the class (if on -> off, if off -> on)
-	});
+			$(document).ready(function(){
+			    $("article").addClass("hidden"); // add a class
+			    $("article").removeClass("hidden"); // remove a class
+			    $("article").toggleClass("hidden"); // toggle the class (if on -> off, if off -> on)
+			});
 	
 	* **css/data/attr**
 		* To access the styles of an element we can use the css function. To access the attributes of an element we can use the attr function. To access the data-attributes of an element we can use the data function. As with text, html, and val, these methods can be used as getters or setters. Pass in a single argument to use them as getters, pass in two to use them as setters. 
@@ -113,5 +112,3 @@
 		        	console.log(e.target.val()); // TypeError! e.target isn't a jQuery object, so doesn't have a .val method.
 		    	});
 			});
-			
-			
